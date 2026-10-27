@@ -1,0 +1,11 @@
+services:
+  janus:
+    image: canyan/janus-gateway:latest
+    container_name: janus-gateway
+    restart: unless-stopped
+    ports:
+      - "8088:8088"       # HTTP REST API
+      - "8188:8188"       # WebSockets API
+      - "8089:8089"       # HTTPS REST API
+      - "8189:8189"       # WSS API
+      - "10000-10100:10000-10100/udp" # WebRTC RTP/RTCP

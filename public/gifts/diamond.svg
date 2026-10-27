@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="diamGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A5F3FC" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="diamGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="100%" stop-color="#7DD3FC" />
+    </linearGradient>
+    <filter id="diamGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#00F0FF" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+  <g filter="url(#diamGlow)">
+    <!-- Top crown facets -->
+    <polygon points="25,25 75,25 62,40 38,40" fill="url(#diamGrad2)" />
+    <polygon points="12,40 25,25 38,40" fill="#38BDF8" />
+    <polygon points="75,25 88,40 62,40" fill="#0284C7" />
+    <!-- Pavilion / bottom facets -->
+    <polygon points="12,40 38,40 50,85" fill="#0369A1" />
+    <polygon points="38,40 62,40 50,85" fill="url(#diamGrad1)" />
+    <polygon points="62,40 88,40 50,85" fill="#0284C7" />
+    <!-- Highlights -->
+    <polygon points="38,40 50,42 50,85" fill="#BAE6FD" opacity="0.6"/>
+    <polygon points="25,25 50,25 38,40" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+</svg>
