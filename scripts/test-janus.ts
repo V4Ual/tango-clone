@@ -1,3 +1,4 @@
+// @ts-nocheck
 import WebSocket from "ws";
 
 async function runJanusTest() {

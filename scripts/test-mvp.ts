@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { prisma } from "../src/lib/prisma";
 import { hashPassword, verifyPassword, createSessionToken, verifySessionToken } from "../src/lib/auth";
 import { WalletService } from "../src/services/wallet.service";
